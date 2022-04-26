@@ -6,6 +6,8 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 // components
 import Navbar from "./components/Navbar";
+import ThemeSelector from "./components/ThemeSelector";
+
 // hooks
 import { useAuthContext } from "./hooks/useAuthContext";
 
@@ -17,6 +19,7 @@ function App() {
       {authIsReady && (
         <BrowserRouter>
           <Navbar />
+          <ThemeSelector />
           <Switch>
             <Route exact path="/">
               {user ? <Home /> : <Redirect to="/login" />}

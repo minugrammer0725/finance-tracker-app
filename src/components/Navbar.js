@@ -10,7 +10,7 @@ const Navbar = () => {
   const { color } = useThemeContext();
 
   return (
-    <nav className={styles.navbar} style={{ background: color }}>
+    <nav className={styles.navbar} style={{ backgroundColor: color }}>
       <ul>
         <li className={styles.title}>myMoney</li>
         {!user ? (
